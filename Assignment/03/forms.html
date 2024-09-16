@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+    <head>
+        <title> 4B12 Forms </title>
+        <link rel="stylesheet" href="./css/forms.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <header>
+            <img src="./image/image0.jpg" href="#" class="logo">
+
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="https://github.com/yin070406"> GitHub </a> </li>
+                <li> <a href="#"> ICT </a> </li>
+                <li> </li>
+                <li> </li>
+                <li> <a href="#"> Sign in </a> </li>
+            </ul>
+
+        </header>
+
+        <div class="container">
+            <header>Hotel Room Booking</header>
+    
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name"  required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email"  required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Phone Number" pattern="[0-9]{8}" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Arrive Date </label>
+                                <input type="date" placeholder="Date of Arriving" min="2022-09-22" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Arrive Time </label>
+                                <input type="time" placeholder="Time of Arriving" min="2022-09-22" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label> Number of Guests </label>
+                                <input type="range" min="1" max="10" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label> Departure Date </label>
+                                <input type="date" min="2022-09-22" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label> Flight Number </label>
+                                <input type="text" pattern="[a-z]{2}[0-9]{4}" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label> Room Type </label>
+                                <select required>
+                                    <option disabled selected>Select Room Type</option>
+                                    <option> Standard </option>
+                                    <option> Premium </option>
+                                    <option> Platinum</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label> Room Type </label>
+                                <select required>
+                                    <option disabled selected>Select Room Type</option>
+                                    <option> Single Room (1 People) </option>
+                                    <option> Double Room (2 People) </option>
+                                    <option> Family Room (2-4 People) </option>
+                                </select>
+                            </div>
+
+                        </div>
+    
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div> 
+                </div>
+    
+                <div class="form second">
+                    <div class="details address">
+                        <span class="title">Address Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>City</label>
+                                <input type="text" placeholder="City" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" placeholder="Country" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Country Code</label>
+                                <input type="text" placeholder="City Code" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Detail Address 1</label>
+                                <input type="text" placeholder="Detail Address 1 (Optional)">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Detail Address 2</label>
+                                <input type="text" placeholder="Detail Address 2 Optional)">
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="form third">
+                            <div class="payment">
+                                <span class="title">Payment</span>
+            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Credit Card Number</label>
+                                        <input type="number" placeholder="Card Number" max="16" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Expiry Date</label>
+                                        <input type="text" placeholder="Expiry Date (XX/XX)" pattern="[0-9]{4}[/]{1}" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>CVV</label>
+                                        <input type="text" placeholder="CVV" pattern="[0-9]{3}" required>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        
+            
+                                <div class="buttons">
+                                    <div class="backBtn">
+                                        <i class="uil uil-navigator"></i>
+                                        <span class="btnText">Back</span>
+                                    </div>
+                                    
+                                    <button class="sumbit" onclick="alert('Your Payment will be Process!')">
+                                        <span class="btnText">Submit</span>
+                                        <i class="uil uil-navigator"></i>
+                                    </button>
+
+                    </div> 
+                </div>
+            </form>
+        </div>
+        <script src="./js/form.js"></script>
+    </body>
+</html>
